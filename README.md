@@ -1,8 +1,6 @@
-Starter project to teach myself C#. 
+Code based on: https://www.youtube.com/watch?v=iJqB6UsM-hs
 
-I don't know what I don't know, so feel free to share and help. 
+The goal was to create a usuable reproduction of the windows 10 calculator. 
+I've added functionality from the original code to handle a +/- key for negative numbers. 
 
-
-Cheers, 
-
-Geoff
+This first Github project was to teach myself how to use both Github and Visual Studios 2017. I've programmed in C++ in the past but needed to update my skill set. 
