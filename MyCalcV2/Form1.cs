@@ -16,7 +16,6 @@ namespace MyCalcV2
         bool isOperationPerformed = false;
         string operationPerformed = "";
         Double calculation_Result = 0;
-        bool NextNumberNegative = false;
 
         public Form1()
         {
@@ -54,7 +53,7 @@ namespace MyCalcV2
                 if (calculation_Result != 0) // Calculation has been stored, do this.
             {
                 isOperationPerformed = true;
-                button17.PerformClick();
+                equals.PerformClick();
                 
             }
             else
@@ -144,6 +143,73 @@ namespace MyCalcV2
 
             }
 
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            switch(e.KeyChar.ToString())
+            {
+                case "0":
+                    zero.PerformClick();
+                    break;
+
+                case "1":
+                    one.PerformClick();
+                    break;
+
+                case "2":
+                    two.PerformClick();
+                    break;
+
+                case "3":
+                    three.PerformClick();
+                    break;
+
+                case "4":
+                    four.PerformClick();
+                    break;
+
+                case "5":
+                    five.PerformClick();
+                    break;
+
+                case "6":
+                    six.PerformClick();
+                    break;
+
+                case "7":
+                    seven.PerformClick();
+                    break;
+
+                case "8":
+                    eight.PerformClick();
+                    break;
+
+                case "9":
+                    nine.PerformClick();
+                    break;
+
+                case "/":
+                    divide.PerformClick();
+                    break;
+
+                case "*":
+                    multiply.PerformClick();
+                    break;
+
+                case "+":
+                    plus.PerformClick();
+                    break;
+
+                case "=":
+                    equals.PerformClick();
+                    break;
+
+                default:
+                    break;
+
+
+            }
         }
     }
 }
