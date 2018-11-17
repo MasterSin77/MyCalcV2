@@ -57,7 +57,7 @@
             this.seven.Location = new System.Drawing.Point(13, 253);
             this.seven.Name = "seven";
             this.seven.Size = new System.Drawing.Size(75, 75);
-            this.seven.TabIndex = 0;
+            this.seven.TabIndex = 5;
             this.seven.Text = "7";
             this.seven.UseVisualStyleBackColor = true;
             this.seven.Click += new System.EventHandler(this.Numbers_clicked);
@@ -68,7 +68,7 @@
             this.eight.Location = new System.Drawing.Point(94, 253);
             this.eight.Name = "eight";
             this.eight.Size = new System.Drawing.Size(75, 75);
-            this.eight.TabIndex = 1;
+            this.eight.TabIndex = 6;
             this.eight.Text = "8";
             this.eight.UseVisualStyleBackColor = true;
             this.eight.Click += new System.EventHandler(this.Numbers_clicked);
@@ -79,7 +79,7 @@
             this.nine.Location = new System.Drawing.Point(175, 253);
             this.nine.Name = "nine";
             this.nine.Size = new System.Drawing.Size(75, 75);
-            this.nine.TabIndex = 2;
+            this.nine.TabIndex = 7;
             this.nine.Text = "9";
             this.nine.UseVisualStyleBackColor = true;
             this.nine.Click += new System.EventHandler(this.Numbers_clicked);
@@ -90,7 +90,7 @@
             this.multiply.Location = new System.Drawing.Point(256, 253);
             this.multiply.Name = "multiply";
             this.multiply.Size = new System.Drawing.Size(75, 75);
-            this.multiply.TabIndex = 3;
+            this.multiply.TabIndex = 8;
             this.multiply.Text = "x";
             this.multiply.UseVisualStyleBackColor = true;
             this.multiply.Click += new System.EventHandler(this.OperatorButtonClicked);
@@ -101,7 +101,7 @@
             this.minus.Location = new System.Drawing.Point(256, 334);
             this.minus.Name = "minus";
             this.minus.Size = new System.Drawing.Size(75, 75);
-            this.minus.TabIndex = 8;
+            this.minus.TabIndex = 12;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = true;
             this.minus.Click += new System.EventHandler(this.OperatorButtonClicked);
@@ -112,7 +112,7 @@
             this.six.Location = new System.Drawing.Point(175, 334);
             this.six.Name = "six";
             this.six.Size = new System.Drawing.Size(75, 75);
-            this.six.TabIndex = 7;
+            this.six.TabIndex = 11;
             this.six.Text = "6";
             this.six.UseVisualStyleBackColor = true;
             this.six.Click += new System.EventHandler(this.Numbers_clicked);
@@ -123,7 +123,7 @@
             this.five.Location = new System.Drawing.Point(94, 334);
             this.five.Name = "five";
             this.five.Size = new System.Drawing.Size(75, 75);
-            this.five.TabIndex = 6;
+            this.five.TabIndex = 10;
             this.five.Text = "5";
             this.five.UseVisualStyleBackColor = true;
             this.five.Click += new System.EventHandler(this.Numbers_clicked);
@@ -134,7 +134,7 @@
             this.four.Location = new System.Drawing.Point(13, 334);
             this.four.Name = "four";
             this.four.Size = new System.Drawing.Size(75, 75);
-            this.four.TabIndex = 5;
+            this.four.TabIndex = 9;
             this.four.Text = "4";
             this.four.UseVisualStyleBackColor = true;
             this.four.Click += new System.EventHandler(this.Numbers_clicked);
@@ -145,7 +145,7 @@
             this.plus.Location = new System.Drawing.Point(256, 415);
             this.plus.Name = "plus";
             this.plus.Size = new System.Drawing.Size(75, 75);
-            this.plus.TabIndex = 13;
+            this.plus.TabIndex = 16;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = true;
             this.plus.Click += new System.EventHandler(this.OperatorButtonClicked);
@@ -156,7 +156,7 @@
             this.three.Location = new System.Drawing.Point(175, 415);
             this.three.Name = "three";
             this.three.Size = new System.Drawing.Size(75, 75);
-            this.three.TabIndex = 12;
+            this.three.TabIndex = 15;
             this.three.Text = "3";
             this.three.UseVisualStyleBackColor = true;
             this.three.Click += new System.EventHandler(this.Numbers_clicked);
@@ -167,7 +167,7 @@
             this.two.Location = new System.Drawing.Point(94, 415);
             this.two.Name = "two";
             this.two.Size = new System.Drawing.Size(75, 75);
-            this.two.TabIndex = 11;
+            this.two.TabIndex = 14;
             this.two.Text = "2";
             this.two.UseVisualStyleBackColor = true;
             this.two.Click += new System.EventHandler(this.Numbers_clicked);
@@ -178,7 +178,7 @@
             this.one.Location = new System.Drawing.Point(13, 415);
             this.one.Name = "one";
             this.one.Size = new System.Drawing.Size(75, 75);
-            this.one.TabIndex = 10;
+            this.one.TabIndex = 13;
             this.one.Text = "1";
             this.one.UseVisualStyleBackColor = true;
             this.one.Click += new System.EventHandler(this.Numbers_clicked);
@@ -189,7 +189,7 @@
             this.equals.Location = new System.Drawing.Point(175, 496);
             this.equals.Name = "equals";
             this.equals.Size = new System.Drawing.Size(156, 75);
-            this.equals.TabIndex = 18;
+            this.equals.TabIndex = 0;
             this.equals.Text = "=";
             this.equals.UseVisualStyleBackColor = true;
             this.equals.Click += new System.EventHandler(this.button17_Click);
@@ -200,7 +200,7 @@
             this.deci.Location = new System.Drawing.Point(94, 496);
             this.deci.Name = "deci";
             this.deci.Size = new System.Drawing.Size(75, 75);
-            this.deci.TabIndex = 17;
+            this.deci.TabIndex = 18;
             this.deci.Text = ".";
             this.deci.UseVisualStyleBackColor = true;
             this.deci.Click += new System.EventHandler(this.Numbers_clicked);
@@ -211,7 +211,7 @@
             this.textBox_Result.Location = new System.Drawing.Point(12, 80);
             this.textBox_Result.Name = "textBox_Result";
             this.textBox_Result.Size = new System.Drawing.Size(318, 60);
-            this.textBox_Result.TabIndex = 20;
+            this.textBox_Result.TabIndex = 19;
             this.textBox_Result.Text = "0";
             this.textBox_Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -223,7 +223,7 @@
             this.labelOperationPerformed.Location = new System.Drawing.Point(12, 44);
             this.labelOperationPerformed.Name = "labelOperationPerformed";
             this.labelOperationPerformed.Size = new System.Drawing.Size(0, 36);
-            this.labelOperationPerformed.TabIndex = 21;
+            this.labelOperationPerformed.TabIndex = 20;
             // 
             // zero
             // 
@@ -231,7 +231,7 @@
             this.zero.Location = new System.Drawing.Point(13, 496);
             this.zero.Name = "zero";
             this.zero.Size = new System.Drawing.Size(75, 75);
-            this.zero.TabIndex = 22;
+            this.zero.TabIndex = 17;
             this.zero.Text = "0";
             this.zero.UseVisualStyleBackColor = true;
             this.zero.Click += new System.EventHandler(this.Numbers_clicked);
@@ -242,7 +242,7 @@
             this.divide.Location = new System.Drawing.Point(256, 172);
             this.divide.Name = "divide";
             this.divide.Size = new System.Drawing.Size(75, 75);
-            this.divide.TabIndex = 26;
+            this.divide.TabIndex = 4;
             this.divide.Text = "÷";
             this.divide.UseVisualStyleBackColor = true;
             this.divide.Click += new System.EventHandler(this.OperatorButtonClicked);
@@ -253,7 +253,7 @@
             this.button16.Location = new System.Drawing.Point(12, 172);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(75, 75);
-            this.button16.TabIndex = 24;
+            this.button16.TabIndex = 1;
             this.button16.Text = "CE";
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
@@ -264,7 +264,7 @@
             this.button19.Location = new System.Drawing.Point(94, 172);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(75, 75);
-            this.button19.TabIndex = 23;
+            this.button19.TabIndex = 2;
             this.button19.Text = "C";
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.button19_Click);
@@ -275,7 +275,7 @@
             this.negative.Location = new System.Drawing.Point(175, 172);
             this.negative.Name = "negative";
             this.negative.Size = new System.Drawing.Size(75, 75);
-            this.negative.TabIndex = 27;
+            this.negative.TabIndex = 3;
             this.negative.Text = "±";
             this.negative.UseVisualStyleBackColor = true;
             this.negative.Click += new System.EventHandler(this.Plus_Minus);
@@ -309,7 +309,7 @@
             this.KeyPreview = true;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Calculator";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();

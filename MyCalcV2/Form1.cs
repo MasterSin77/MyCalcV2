@@ -16,6 +16,8 @@ namespace MyCalcV2
         bool isOperationPerformed = false;
         string operationPerformed = "";
         Double calculation_Result = 0;
+        bool StartFresh = false;
+        
 
         public Form1()
         {
@@ -24,7 +26,11 @@ namespace MyCalcV2
 
         private void Numbers_clicked(object sender, EventArgs e) // All number buttons and decimal
         {
+            equals.Focus(); // Keep focus on Equals button.
+
             Button button = (Button)sender;
+
+            if((StartFresh) && (textBox_Result.Text!="")) { button16.PerformClick(); } // There was already an equals button pushed, so start a new equation with any number button pushed. 
 
             if(textBox_Result.Text=="0") { textBox_Result.Clear(); } // If a number has been pressed and the number field is zero then clear the number field.
 
@@ -41,16 +47,20 @@ namespace MyCalcV2
                 textBox_Result.Text = textBox_Result.Text + button.Text;
             }
 
+        
+
          }
 
         private void OperatorButtonClicked(object sender, EventArgs e) // Buttons + - x ÷ %
         {
+            equals.Focus();
+
             Button button = (Button)sender;
             operationPerformed = button.Text;
             labelOperationPerformed.Text = textBox_Result.Text + " " + button.Text;
 
- 
-                if (calculation_Result != 0) // Calculation has been stored, do this.
+
+            if (calculation_Result != 0) // Calculation has been stored, do this.
             {
                 isOperationPerformed = true;
                 equals.PerformClick();
@@ -69,11 +79,14 @@ namespace MyCalcV2
                     operationPerformed = ""; // When operator button is pushed, but NO numbers have been entered do this. 
                 }
             }
+
+          
         }
 
         private void button19_Click(object sender, EventArgs e) // Clear results textbox only
         {
             textBox_Result.Text = "0";
+            
         }
 
         private void button16_Click(object sender, EventArgs e) //Clear equation
@@ -84,12 +97,18 @@ namespace MyCalcV2
             textBox_Result.Text = "0";
             labelOperationPerformed.Text = "";
             calculation_Result = 0;
+            StartFresh = false;
+            
         }
 
         private void button17_Click(object sender, EventArgs e) //Press equals button
         {
+
             if (isOperationPerformed)
             {
+                labelOperationPerformed.Text = labelOperationPerformed.Text + " " + textBox_Result.Text + " =";
+
+
                 switch (operationPerformed)
                 {
                     case "+":
@@ -113,10 +132,10 @@ namespace MyCalcV2
                 }
 
                 calculation_Result = Double.Parse(textBox_Result.Text);
-                labelOperationPerformed.Text = "";
                 isOperationPerformed = false;
-
-
+                StartFresh = true;
+                operationPerformed = "";
+                button16.Focus();
             }
         }
 
@@ -143,11 +162,15 @@ namespace MyCalcV2
 
             }
 
+            
+
         }
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            switch(e.KeyChar.ToString())
+            // if (e.KeyChar == (char)Keys.Enter) { equals.PerformClick(); return; }
+
+                switch (e.KeyChar.ToString())
             {
                 case "0":
                     zero.PerformClick();
@@ -204,6 +227,11 @@ namespace MyCalcV2
                 case "=":
                     equals.PerformClick();
                     break;
+
+                case ".":
+                    deci.PerformClick();
+                    break;
+
 
                 default:
                     break;
